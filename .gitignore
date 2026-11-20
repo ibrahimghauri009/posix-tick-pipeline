@@ -1,0 +1,10 @@
+dispatcher
+ingester
+processor
+reporter
+logs/
+report/
+output/
+out/
+.dispatcher.pid
+*.o
