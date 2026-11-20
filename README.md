@@ -17,8 +17,7 @@ memory; worker threads consume a bounded queue guarded by mutexes and semaphores
 
 Example output for the bundled sample data is in [`docs/sample_output/`](docs/sample_output).
 
-> **Team project.** Operating Systems final project, FAST-NUCES (Spring 2026), by Ibrahim Ghauri and
-> Vikram Kumar. [Confirm the team list and add who built which process before making this repo public.]
+> **Team project.** Operating Systems final project, FAST-NUCES (Spring 2026), by Ibrahim Ghauri and Vikram Kumar.
 
 ---
 
