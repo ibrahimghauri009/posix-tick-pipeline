@@ -1,5 +1,7 @@
 # Concurrent Financial Tick-Data Pipeline (C, POSIX)
 
+[![build-and-run](https://github.com/ibrahimghauri009/posix-tick-pipeline/actions/workflows/build.yml/badge.svg)](https://github.com/ibrahimghauri009/posix-tick-pipeline/actions/workflows/build.yml)
+
 A multi-process, multi-threaded pipeline that aggregates stock tick CSVs into per-symbol High, Low,
 VWAP and total volume. Four cooperating processes communicate through a named pipe and POSIX shared
 memory; worker threads consume a bounded queue guarded by mutexes and semaphores.

@@ -1,0 +1,20 @@
+name: build-and-run
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with warnings as errors
+        run: make CFLAGS="-Wall -Wextra -Werror -pthread -g -I./src"
+      - name: Run the pipeline on the sample data
+        run: bash run.sh -i ./data -o ./out -n 4 -q 16
+      - name: Compare with the expected report
+        run: diff -u docs/sample_output/report.csv out/report.csv
+      - name: Check IPC resources were cleaned up
+        run: test ! -e /tmp/os_project_fifo && test ! -e /dev/shm/os_project_shm
