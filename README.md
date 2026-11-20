@@ -155,3 +155,7 @@ ls /tmp/os_project_fifo   # Should indicate no file found
 | 40   | Input/Output error encountered |
 | 130  | Graceful termination via SIGINT (`Ctrl+C`) |
 | 143  | Graceful termination via SIGTERM |
+
+## Licence
+
+MIT; see `LICENSE`.
